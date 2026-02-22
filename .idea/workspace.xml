@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f51ff2ec-008b-4ed0-a639-779d9ce9e382" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/My projects/My Dinosauras Pedia.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/My projects/My Library Project.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOPS in Python/Abstraction in Python.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOPS in Python/Aggregation in Python.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOPS in Python/Inheritance in Python.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOPS in Python/Polymorphism in Python.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOPS in Python/Super keyword in Python.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My projects/My Atm Project.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/My projects/My Atm Project.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +61,7 @@
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
@@ -61,7 +73,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -102,8 +114,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.30387.173" />
-        <option value="bundled-python-sdk-4762d8aabb82-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.30387.173" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.31033.139" />
+        <option value="bundled-python-sdk-2653e85de345-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.31033.139" />
       </set>
     </attachedChunks>
   </component>
@@ -130,7 +142,17 @@
       <workItem from="1771399069559" duration="66000" />
       <workItem from="1771407068000" duration="12000" />
       <workItem from="1771407151782" duration="1312000" />
-      <workItem from="1771413777780" duration="4922000" />
+      <workItem from="1771413777780" duration="16007000" />
+      <workItem from="1771503632560" duration="10262000" />
+      <workItem from="1771519408911" duration="3820000" />
+      <workItem from="1771569633625" duration="9290000" />
+      <workItem from="1771593913923" duration="864000" />
+      <workItem from="1771597839838" duration="1368000" />
+      <workItem from="1771648964254" duration="4774000" />
+      <workItem from="1771663187724" duration="6391000" />
+      <workItem from="1771680474550" duration="64000" />
+      <workItem from="1771680556358" duration="1584000" />
+      <workItem from="1771736307849" duration="832000" />
     </task>
     <servers />
   </component>
@@ -144,6 +166,11 @@
           <url>file://$PROJECT_DIR$/OOPS in Python/Class &amp; Objects in Python.ipynb</url>
           <line>81</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>file://$PROJECT_DIR$/My projects/My Dinosauras Pedia.ipynb</url>
+          <line>213</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
