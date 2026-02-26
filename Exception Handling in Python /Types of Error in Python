@@ -1,0 +1,187 @@
+{
+ "cells": [
+  {
+   "metadata": {},
+   "cell_type": "markdown",
+   "source": [
+    "**A program can have errors at two stages:**\n",
+    "\n",
+    "1. _During compilation_ → Syntax Error\n",
+    "\n",
+    "2. _During execution_ → Exception"
+   ],
+   "id": "8a979885c7d61d32"
+  },
+  {
+   "metadata": {},
+   "cell_type": "markdown",
+   "source": [
+    "**What is a Syntax Error?**\n",
+    "\n",
+    "1. _It happens when the program is not written according to the correct grammar (rules) of the language._\n",
+    "\n",
+    " 2. The compiler or interpreter shows this error.\n",
+    "\n",
+    "3. You can fix it by correcting the code."
+   ],
+   "id": "e08c4ae360645084"
+  },
+  {
+   "metadata": {},
+   "cell_type": "code",
+   "outputs": [],
+   "execution_count": null,
+   "source": [
+    "# example of syntax error\n",
+    "print 'ayush bhai'   # if we dont use parentheses"
+   ],
+   "id": "dc09a2f24c14dbaf"
+  },
+  {
+   "metadata": {},
+   "cell_type": "markdown",
+   "source": [
+    "**Other examples of Syntax error**\n",
+    "1. leaving symbols like semi colon.\n",
+    "2. missspelling a keyword\n",
+    "3. incorrect indentation\n",
+    "4. empty if/else/loops/class/function"
+   ],
+   "id": "483e22a56ee3c5e2"
+  },
+  {
+   "metadata": {},
+   "cell_type": "code",
+   "outputs": [],
+   "execution_count": null,
+   "source": [
+    "# index error\n",
+    "# the indexerror is thrown when trying to access an item at an invaild index.\n",
+    "\n",
+    "l = [1,2,3]\n",
+    "l[100]  # this index error"
+   ],
+   "id": "69e9022f020ed57b"
+  },
+  {
+   "metadata": {},
+   "cell_type": "code",
+   "outputs": [],
+   "execution_count": null,
+   "source": [
+    "# module not found error\n",
+    "# modulenotfounderror is thrown when a modules could not be found.\n",
+    "\n",
+    "import maths  # wrong module entered\n",
+    "math.floor(5.6)"
+   ],
+   "id": "259179c54d02cf39"
+  },
+  {
+   "metadata": {},
+   "cell_type": "code",
+   "outputs": [],
+   "execution_count": null,
+   "source": [
+    "# keyError\n",
+    "# the keyError is thrown when a key is not found\n",
+    "\n",
+    "d = {'name' : 'ayush'}\n",
+    "d['age']  # keyError"
+   ],
+   "id": "44d5419ec8d6aa31"
+  },
+  {
+   "metadata": {},
+   "cell_type": "code",
+   "source": [
+    "# typeError\n",
+    "# the typeError is thrown when an operations or function is applied to an object of an inappropriate type.\n",
+    "\n",
+    "int('a')"
+   ],
+   "id": "457275e3043ed2d9",
+   "outputs": [],
+   "execution_count": null
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-02-26T15:26:15.285487700Z",
+     "start_time": "2026-02-26T15:26:14.593064900Z"
+    }
+   },
+   "cell_type": "code",
+   "source": [
+    "# valueError\n",
+    "# the valueError is thrown when a function is applied to an object of an object of an inappropriate error type.\n",
+    "int('a')"
+   ],
+   "id": "dce52bc607d50424",
+   "outputs": [
+    {
+     "ename": "ValueError",
+     "evalue": "invalid literal for int() with base 10: 'a'",
+     "output_type": "error",
+     "traceback": [
+      "\u001B[31m---------------------------------------------------------------------------\u001B[39m",
+      "\u001B[31mValueError\u001B[39m                                Traceback (most recent call last)",
+      "\u001B[36mCell\u001B[39m\u001B[36m \u001B[39m\u001B[32mIn[1]\u001B[39m\u001B[32m, line 3\u001B[39m\n\u001B[32m      1\u001B[39m \u001B[38;5;66;03m# valueError\u001B[39;00m\n\u001B[32m      2\u001B[39m \u001B[38;5;66;03m# the valueError is thrown when a function is applied to an object of an object of an inappropriate error type.\u001B[39;00m\n\u001B[32m----> \u001B[39m\u001B[32m3\u001B[39m \u001B[38;5;28;43mint\u001B[39;49m\u001B[43m(\u001B[49m\u001B[33;43m'\u001B[39;49m\u001B[33;43ma\u001B[39;49m\u001B[33;43m'\u001B[39;49m\u001B[43m)\u001B[49m\n",
+      "\u001B[31mValueError\u001B[39m: invalid literal for int() with base 10: 'a'"
+     ]
+    }
+   ],
+   "execution_count": 1
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-02-26T15:27:50.188592200Z",
+     "start_time": "2026-02-26T15:27:50.170304100Z"
+    }
+   },
+   "cell_type": "code",
+   "source": [
+    "# nameError\n",
+    "# The NameError is thrown when an object could not be found.\n",
+    "print(k) # nameError"
+   ],
+   "id": "6f9394de52dc4a41",
+   "outputs": [],
+   "execution_count": 2
+  },
+  {
+   "metadata": {},
+   "cell_type": "code",
+   "outputs": [],
+   "execution_count": null,
+   "source": [
+    "# ArributeError\n",
+    "l = [1,2,3,4]\n",
+    "l.upper() # this upper is use in String not in list so it will consider as AttributeError."
+   ],
+   "id": "c30b08777c2088dd"
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 2
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython2",
+   "version": "2.7.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
