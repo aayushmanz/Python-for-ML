@@ -1,10 +1,10 @@
-# 🚀 Python for Machine Learning Journey
+# Python for Machine Learning Journey
 
 Welcome to my Machine Learning repository! I am currently building a strong foundation in Python, transitioning my core Object-Oriented Programming skills from **Java to Python**. This is part of my 6-month intensive roadmap to becoming a Machine Learning Engineer.
 
 This repository serves as my daily code journal and a central toolkit where I document my progress, practice algorithms, and write clean, efficient code.
 
-## 📂 Repository Structure
+## Repository Structure
 
 ### 1. `Fundamentals of Python/`
 This folder contains Jupyter Notebooks covering all core Python concepts required for Data Science and ML:
@@ -57,15 +57,15 @@ Real-world Python projects applying all learned concepts end-to-end:
 * **My DinosaursPedia** – Dinosaur encyclopedia/database application.
 * **Google Create and Login** – Google-style user authentication system.
 
-## 🛠️ Tech Stack & Tools
+## Tech Stack & Tools
 * **Language:** Python 3.x
 * **Environment:** PyCharm / Jupyter Notebook
 * **Version Control:** Git & GitHub
 
-## 🎯 My Goal
+## My Goal
 To master Data Science/ML concepts and build end-to-end, real-world Machine Learning Web Applications within the next 6 months.
 
-### ⏳ Upcoming Modules:
+### Upcoming Modules:
 * `NumPy_Practice/` (Arrays, Matrices, and Mathematical Operations)
 * `Pandas_Analysis/` (Data manipulation and CSV handling)
 * `Matplotlib_Visuals/` (Data Visualization)
