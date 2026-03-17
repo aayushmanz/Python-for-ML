@@ -57,6 +57,11 @@ Real-world Python projects applying all learned concepts end-to-end:
 * **My DinosaursPedia** – Dinosaur encyclopedia/database application.
 * **Google Create and Login** – Google-style user authentication system.
 
+### 8. `NumPy For Python /`
+Introduction to NumPy — the foundational library for numerical computing and ML data pipelines:
+* **NumPy Fundamentals:** What NumPy is, NumPy arrays vs Python sequences, and creating arrays (`np.array`, `np.arange`, `np.ones`, `np.zeros`, `np.random`, `np.linspace`, `np.identity`), 1-D/2-D/3-D arrays, dtype control, and `reshape`.
+* **NumPy Attributes & Array Functions:** Array attributes (`ndim`, `shape`, `size`, `itemsize`, `dtype`, `astype`), scalar & vector arithmetic and relational operations, and array functions (`max`/`min`/`sum`/`prod`, `mean`/`median`/`std`/`var`, trigonometric functions, dot product, `exp`/`log`, `round`/`floor`/`ceil`) with axis-based computations.
+
 ## Tech Stack & Tools
 * **Language:** Python 3.x
 * **Environment:** PyCharm / Jupyter Notebook
@@ -66,7 +71,6 @@ Real-world Python projects applying all learned concepts end-to-end:
 To master Data Science/ML concepts and build end-to-end, real-world Machine Learning Web Applications within the next 6 months.
 
 ### Upcoming Modules:
-* `NumPy_Practice/` (Arrays, Matrices, and Mathematical Operations)
 * `Pandas_Analysis/` (Data manipulation and CSV handling)
 * `Matplotlib_Visuals/` (Data Visualization)
 
