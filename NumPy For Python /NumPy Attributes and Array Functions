@@ -1,0 +1,890 @@
+{
+ "cells": [
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-03-17T10:43:43.550583600Z",
+     "start_time": "2026-03-17T10:43:43.467988100Z"
+    }
+   },
+   "cell_type": "code",
+   "source": [
+    "import numpy as np\n",
+    "from numpy import dtype\n",
+    "\n",
+    "a1 = np.arange(10)\n",
+    "a2 = np.arange(12, dtype=float).reshape(3,4)\n",
+    "a3 = np.arange(8).reshape(2,2,2)\n",
+    "\n",
+    "a3"
+   ],
+   "id": "237310cd9c34902d",
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[[0, 1],\n",
+       "        [2, 3]],\n",
+       "\n",
+       "       [[4, 5],\n",
+       "        [6, 7]]])"
+      ]
+     },
+     "execution_count": 1,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "execution_count": 1
+  },
+  {
+   "cell_type": "code",
+   "id": "initial_id",
+   "metadata": {
+    "collapsed": true,
+    "ExecuteTime": {
+     "end_time": "2026-03-17T10:43:53.629282300Z",
+     "start_time": "2026-03-17T10:43:53.604346700Z"
+    }
+   },
+   "source": [
+    "# ndim\n",
+    "a2.ndim"
+   ],
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "execution_count": 2
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-03-17T10:44:21.501236800Z",
+     "start_time": "2026-03-17T10:44:21.468705100Z"
+    }
+   },
+   "cell_type": "code",
+   "source": "a3.ndim   # 3 dimantion",
+   "id": "c1c28a3976d8cba2",
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "3"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "execution_count": 3
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-03-17T10:45:24.624651900Z",
+     "start_time": "2026-03-17T10:45:24.577450300Z"
+    }
+   },
+   "cell_type": "code",
+   "source": [
+    "# shape\n",
+    "print(a3.shape)  # show the shape of dimanetion of array !\n",
+    "a3"
+   ],
+   "id": "42a43edd17c46c5b",
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(2, 2, 2)\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "array([[[0, 1],\n",
+       "        [2, 3]],\n",
+       "\n",
+       "       [[4, 5],\n",
+       "        [6, 7]]])"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "execution_count": 5
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-03-17T10:46:44.250401900Z",
+     "start_time": "2026-03-17T10:46:44.213361600Z"
+    }
+   },
+   "cell_type": "code",
+   "source": [
+    "# size\n",
+    "print(a2.size) # 12 is size of a2\n",
+    "a2"
+   ],
+   "id": "174ceb90646cd653",
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "12\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "array([[ 0.,  1.,  2.,  3.],\n",
+       "       [ 4.,  5.,  6.,  7.],\n",
+       "       [ 8.,  9., 10., 11.]])"
+      ]
+     },
+     "execution_count": 6,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "execution_count": 6
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-03-17T10:47:21.847731500Z",
+     "start_time": "2026-03-17T10:47:21.816673700Z"
+    }
+   },
+   "cell_type": "code",
+   "source": [
+    "# itemsize\n",
+    "\n",
+    "a2.itemsize  # integer 32 take 4 byte but this is default value so integer is 16 taking 8 byte"
+   ],
+   "id": "bf480a9450b5570c",
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "8"
+      ]
+     },
+     "execution_count": 7,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "execution_count": 7
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-03-17T10:54:48.144978800Z",
+     "start_time": "2026-03-17T10:54:48.120319Z"
+    }
+   },
+   "cell_type": "code",
+   "source": [
+    "# dtype\n",
+    "print(a1.dtype)\n",
+    "print(a2.dtype)\n",
+    "print(a3.dtype)"
+   ],
+   "id": "a9cc020c02be6913",
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "int64\n",
+      "float64\n",
+      "int64\n"
+     ]
+    }
+   ],
+   "execution_count": 11
+  },
+  {
+   "metadata": {},
+   "cell_type": "markdown",
+   "source": "**Changing Datatype :**",
+   "id": "1b123994f4b3cdaa"
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-03-17T10:54:27.393575100Z",
+     "start_time": "2026-03-17T10:54:27.353476200Z"
+    }
+   },
+   "cell_type": "code",
+   "source": [
+    "# astype\n",
+    "a3.astype(np.int32)  # we are changing the size of int64 to int32."
+   ],
+   "id": "2edd542bfb1b4980",
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[[0, 1],\n",
+       "        [2, 3]],\n",
+       "\n",
+       "       [[4, 5],\n",
+       "        [6, 7]]], dtype=int32)"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "execution_count": 10
+  },
+  {
+   "metadata": {},
+   "cell_type": "markdown",
+   "source": "**Array Operations :**",
+   "id": "16f5e84362314f48"
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-03-17T10:58:33.419468500Z",
+     "start_time": "2026-03-17T10:58:33.398347900Z"
+    }
+   },
+   "cell_type": "code",
+   "source": [
+    "a1 = np.arange(12).reshape(3,4)\n",
+    "a2 = np.arange(12,24).reshape(3,4)\n",
+    "a1"
+   ],
+   "id": "c28fd66bf1c6a0e0",
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[ 0,  1,  2,  3],\n",
+       "       [ 4,  5,  6,  7],\n",
+       "       [ 8,  9, 10, 11]])"
+      ]
+     },
+     "execution_count": 16,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "execution_count": 16
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-03-17T10:58:59.237542800Z",
+     "start_time": "2026-03-17T10:58:59.214450900Z"
+    }
+   },
+   "cell_type": "code",
+   "source": [
+    "# scalar Operations\n",
+    "\n",
+    "# Arithmetic\n",
+    "a1 ** 2  # a1 * 2  a1 + 2  a1 - 2  a1 / 2"
+   ],
+   "id": "f0cd8956c32f3306",
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[  0,   1,   4,   9],\n",
+       "       [ 16,  25,  36,  49],\n",
+       "       [ 64,  81, 100, 121]])"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "execution_count": 17
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-03-17T11:00:31.794256500Z",
+     "start_time": "2026-03-17T11:00:31.780757200Z"
+    }
+   },
+   "cell_type": "code",
+   "source": [
+    "# Relational\n",
+    "a2 > 15"
+   ],
+   "id": "4ce9bbcf3dd19c97",
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[False, False, False, False],\n",
+       "       [ True,  True,  True,  True],\n",
+       "       [ True,  True,  True,  True]])"
+      ]
+     },
+     "execution_count": 20,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "execution_count": 20
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-03-17T11:00:52.621579700Z",
+     "start_time": "2026-03-17T11:00:52.595315600Z"
+    }
+   },
+   "cell_type": "code",
+   "source": "a2 == 15",
+   "id": "39e4362bd3461508",
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[False, False, False,  True],\n",
+       "       [False, False, False, False],\n",
+       "       [False, False, False, False]])"
+      ]
+     },
+     "execution_count": 22,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "execution_count": 22
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-03-17T11:01:27.487577700Z",
+     "start_time": "2026-03-17T11:01:27.445386900Z"
+    }
+   },
+   "cell_type": "code",
+   "source": [
+    "# vector operations\n",
+    "#arithmetic\n",
+    "a1 + a2  # a1 * a2  a1 / a2"
+   ],
+   "id": "b0dc7434f46ae9ce",
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[12, 14, 16, 18],\n",
+       "       [20, 22, 24, 26],\n",
+       "       [28, 30, 32, 34]])"
+      ]
+     },
+     "execution_count": 23,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "execution_count": 23
+  },
+  {
+   "metadata": {},
+   "cell_type": "markdown",
+   "source": "**Array Functions :**",
+   "id": "94644a986dde4362"
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-03-17T11:06:11.762537700Z",
+     "start_time": "2026-03-17T11:06:11.414230500Z"
+    }
+   },
+   "cell_type": "code",
+   "source": [
+    "a1 = np.random.random((3,3))\n",
+    "a1 = np.round(a1*100)\n",
+    "\n",
+    "a1"
+   ],
+   "id": "fd8d82fac91c608e",
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[43., 71., 68.],\n",
+       "       [47.,  8., 76.],\n",
+       "       [31., 85., 14.]])"
+      ]
+     },
+     "execution_count": 24,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "execution_count": 24
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-03-17T11:06:39.336349100Z",
+     "start_time": "2026-03-17T11:06:39.298855200Z"
+    }
+   },
+   "cell_type": "code",
+   "source": [
+    "# max/min/sum/prod\n",
+    "np.max(a1)"
+   ],
+   "id": "9cc8009a01b56398",
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "np.float64(85.0)"
+      ]
+     },
+     "execution_count": 26,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "execution_count": 26
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-03-17T11:07:06.913594200Z",
+     "start_time": "2026-03-17T11:07:06.882016700Z"
+    }
+   },
+   "cell_type": "code",
+   "source": "np.min(a1)",
+   "id": "7b6f08be13722e59",
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "np.float64(8.0)"
+      ]
+     },
+     "execution_count": 27,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "execution_count": 27
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-03-17T11:07:24.417382500Z",
+     "start_time": "2026-03-17T11:07:24.374460300Z"
+    }
+   },
+   "cell_type": "code",
+   "source": "np.sum(a1)",
+   "id": "2b2ac51f8392c46c",
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "np.float64(443.0)"
+      ]
+     },
+     "execution_count": 28,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "execution_count": 28
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-03-17T11:07:41.384877800Z",
+     "start_time": "2026-03-17T11:07:41.352947600Z"
+    }
+   },
+   "cell_type": "code",
+   "source": "np.prod(a1)",
+   "id": "35ab453b5b097fff",
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "np.float64(218849626338560.0)"
+      ]
+     },
+     "execution_count": 29,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "execution_count": 29
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-03-17T11:09:48.185096400Z",
+     "start_time": "2026-03-17T11:09:48.154477300Z"
+    }
+   },
+   "cell_type": "code",
+   "source": [
+    "# 0 -> col and 1 -> row\n",
+    "np.max(a1, axis=1)"
+   ],
+   "id": "c92cd4c94ffbe8a8",
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([71., 76., 85.])"
+      ]
+     },
+     "execution_count": 33,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "execution_count": 33
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-03-17T11:09:15.037104500Z",
+     "start_time": "2026-03-17T11:09:14.993575900Z"
+    }
+   },
+   "cell_type": "code",
+   "source": "np.max(a1, axis=0)",
+   "id": "c044e4489b41036e",
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([47., 85., 76.])"
+      ]
+     },
+     "execution_count": 31,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "execution_count": 31
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-03-17T11:10:20.570588700Z",
+     "start_time": "2026-03-17T11:10:20.515680300Z"
+    }
+   },
+   "cell_type": "code",
+   "source": [
+    "# mean/medium/std/var\n",
+    "\n",
+    "np.mean(a1)"
+   ],
+   "id": "ad23beef4f002c7b",
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "np.float64(49.22222222222222)"
+      ]
+     },
+     "execution_count": 34,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "execution_count": 34
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-03-17T11:11:14.751650200Z",
+     "start_time": "2026-03-17T11:11:14.721637700Z"
+    }
+   },
+   "cell_type": "code",
+   "source": "np.var(a1, axis=1)",
+   "id": "a6bef35d6a593bb1",
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([157.55555556, 776.22222222, 916.22222222])"
+      ]
+     },
+     "execution_count": 35,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "execution_count": 35
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-03-17T11:11:45.129478300Z",
+     "start_time": "2026-03-17T11:11:45.098481600Z"
+    }
+   },
+   "cell_type": "code",
+   "source": "np.median(a1, axis=1)",
+   "id": "8484a11f46cbbf54",
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([68., 47., 31.])"
+      ]
+     },
+     "execution_count": 37,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "execution_count": 37
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-03-17T11:12:17.437512300Z",
+     "start_time": "2026-03-17T11:12:17.387244400Z"
+    }
+   },
+   "cell_type": "code",
+   "source": "np.std(a1, axis=1)",
+   "id": "2ecc047d6c9dabfa",
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([12.55211359, 27.86076493, 30.26916289])"
+      ]
+     },
+     "execution_count": 38,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "execution_count": 38
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-03-17T11:12:59.062562400Z",
+     "start_time": "2026-03-17T11:12:59.033345200Z"
+    }
+   },
+   "cell_type": "code",
+   "source": [
+    "# trigonometric functions\n",
+    "np.sin(a1)"
+   ],
+   "id": "2a95d82be7957f97",
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[-0.83177474,  0.95105465, -0.89792768],\n",
+       "       [ 0.12357312,  0.98935825,  0.56610764],\n",
+       "       [-0.40403765, -0.17607562,  0.99060736]])"
+      ]
+     },
+     "execution_count": 39,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "execution_count": 39
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-03-17T11:17:19.338368500Z",
+     "start_time": "2026-03-17T11:17:19.313766500Z"
+    }
+   },
+   "cell_type": "code",
+   "source": [
+    "# dot product\n",
+    "a2 = np.arange(12).reshape(3,4)\n",
+    "a3 = np.arange(12,24).reshape(4,3)\n",
+    "\n",
+    "np.dot(a2, a3)"
+   ],
+   "id": "b76c4130d06ce01c",
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[114, 120, 126],\n",
+       "       [378, 400, 422],\n",
+       "       [642, 680, 718]])"
+      ]
+     },
+     "execution_count": 42,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "execution_count": 42
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-03-17T11:18:01.342524400Z",
+     "start_time": "2026-03-17T11:18:01.307172300Z"
+    }
+   },
+   "cell_type": "code",
+   "source": [
+    "# log and exponents\n",
+    "np.exp(a1)"
+   ],
+   "id": "18d62277efaedca2",
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[4.72783947e+18, 6.83767123e+30, 3.40427605e+29],\n",
+       "       [2.58131289e+20, 2.98095799e+03, 1.01480039e+33],\n",
+       "       [2.90488497e+13, 8.22301271e+36, 1.20260428e+06]])"
+      ]
+     },
+     "execution_count": 43,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "execution_count": 43
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-03-17T11:19:12.525650200Z",
+     "start_time": "2026-03-17T11:19:12.497633900Z"
+    }
+   },
+   "cell_type": "code",
+   "source": [
+    "# round/floor/ceil\n",
+    "np.round(np.random.random((2,3))*100)"
+   ],
+   "id": "36a0b18f92452f3",
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[21.,  3.,  3.],\n",
+       "       [ 5.,  2., 38.]])"
+      ]
+     },
+     "execution_count": 44,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "execution_count": 44
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-03-17T11:20:43.548675800Z",
+     "start_time": "2026-03-17T11:20:43.512220700Z"
+    }
+   },
+   "cell_type": "code",
+   "source": "np.floor(np.random.random((2,3))*100)",
+   "id": "29cbe7c6d7d8fb67",
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[98., 21., 84.],\n",
+       "       [58., 84., 10.]])"
+      ]
+     },
+     "execution_count": 46,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "execution_count": 46
+  },
+  {
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2026-03-17T11:20:36.353180100Z",
+     "start_time": "2026-03-17T11:20:36.320552Z"
+    }
+   },
+   "cell_type": "code",
+   "source": "np.ceil(np.random.random((2,3))*100)",
+   "id": "245d673216c064ef",
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[67., 68., 82.],\n",
+       "       [59., 31., 50.]])"
+      ]
+     },
+     "execution_count": 45,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "execution_count": 45
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 2
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython2",
+   "version": "2.7.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
