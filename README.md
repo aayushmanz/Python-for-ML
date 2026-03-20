@@ -61,6 +61,15 @@ Real-world Python projects applying all learned concepts end-to-end:
 Introduction to NumPy — the foundational library for numerical computing and ML data pipelines:
 * **NumPy Fundamentals:** What NumPy is, NumPy arrays vs Python sequences, and creating arrays (`np.array`, `np.arange`, `np.ones`, `np.zeros`, `np.random`, `np.linspace`, `np.identity`), 1-D/2-D/3-D arrays, dtype control, and `reshape`.
 * **NumPy Attributes & Array Functions:** Array attributes (`ndim`, `shape`, `size`, `itemsize`, `dtype`, `astype`), scalar & vector arithmetic and relational operations, and array functions (`max`/`min`/`sum`/`prod`, `mean`/`median`/`std`/`var`, trigonometric functions, dot product, `exp`/`log`, `round`/`floor`/`ceil`) with axis-based computations.
+* **NumPy Indexing & Slicing:** Array indexing and slicing techniques for 1-D, 2-D, and 3-D arrays.
+* **NumPy Iterating & Reshaping:** Iterating over arrays using `nditer` and reshaping/flattening arrays.
+* **NumPy Stacking & Splitting:** Combining arrays with `hstack`/`vstack`/`concatenate` and splitting with `hsplit`/`vsplit`/`array_split`.
+* **NumPy Practice:** Hands-on exercises to consolidate NumPy fundamentals.
+
+### 9. `NumPy Advance/`
+Advanced NumPy techniques essential for high-performance ML and data processing:
+* **Advanced Indexing:** Fancy indexing, boolean indexing, integer array indexing, and filtering arrays with conditions.
+* **Broadcasting:** NumPy broadcasting rules for performing operations on arrays of different shapes without explicit loops.
 
 ## Tech Stack & Tools
 * **Language:** Python 3.x
