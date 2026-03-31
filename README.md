@@ -1,4 +1,4 @@
-# Python for Machine Learning Journey
+# Python for Machine Learning Journey.
 
 Welcome to my Machine Learning repository! I am currently building a strong foundation in Python, transitioning my core Object-Oriented Programming skills from **Java to Python**. This is part of my 6-month intensive roadmap to becoming a Machine Learning Engineer.
 
