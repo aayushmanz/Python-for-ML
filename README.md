@@ -2,83 +2,84 @@
 
 Welcome to my **Python for Machine Learning** learning repository.
 
-This repo is my hands-on journey from Python basics to ML-ready programming using Jupyter notebooks, practice sets, and mini projects.
+This repository documents my hands-on journey from fundamental Python programming to machine learning-ready coding, utilizing Jupyter Notebooks, practice sets, and modular mini-projects.
 
-## What this repository contains
+## Repository Structure
 
 ### `Fundamentals of Python/`
-Core Python basics:
-- Control flow (`if-else`, loops, loop control)
-- Data structures (list, tuple, set, frozenset, dictionary, string)
+Core Python programming concepts:
+- Control flow (if-else statements, loops, loop control mechanisms)
+- Data structures (lists, tuples, sets, frozensets, dictionaries, strings)
 - Functions and arguments
-- Lambda and comprehensions
+- Lambda functions and comprehensions
 - Modules and operators
 
 ### `Advance Python/`
 - Decorators
-- Namespace and scope
+- Namespace and scope management
 
 ### `Exception Handling in Python/`
-- Error types in Python
-- `try` / `except` / `else` / `finally`
-- Custom exceptions
+- Classification of Python errors
+- Implementation of try, except, else, and finally blocks
+- Creating and handling custom exceptions
 
 ### `File Handling in Python/`
 - Text and binary file operations
-- `with` statement usage
-- Serialization/deserialization
-- Pickling
+- Context management using the 'with' statement
+- Serialization and deserialization (Pickling)
 
 ### `OOPS in Python/`
+Object-Oriented Programming principles:
 - Classes and objects
-- Inheritance
-- Encapsulation
+- Inheritance hierarchies
+- Encapsulation and data hiding
 - Abstraction
 - Polymorphism
-- Aggregation and `super()`
+- Object aggregation and the super() function
 
 ### `Python fundamental Questions/`
-Practice notebooks focused on:
-- Fundamentals revision
-- Data structure exercises
-- Decorator, OOP, and exception handling practice
+Practice notebooks dedicated to:
+- Revision of fundamental logic
+- Data structure manipulation exercises
+- Decorator, OOP, and exception handling practicals
 
 ### `My projects/`
-Mini projects built during learning:
-- Calculator
-- Calculator V2
-- ATM project
-- Library project
+Functional mini-projects developed during the learning phase:
+- Standard Calculator and Calculator V2
+- ATM System simulation
+- Library Management project
 - DinosaursPedia
-- Google create & login
+- Google Account Creation & Login simulation
 
-### `NumPy For Python /`
-NumPy basics:
-- Arrays and attributes
-- Indexing and slicing
-- Iteration and reshaping
-- Stacking and splitting
+### `NumPy For Python/`
+Fundamental array computing:
+- Array creation and attributes
+- Basic indexing and slicing
+- Iteration and array reshaping
+- Array stacking and splitting
 
 ### `NumPy For Practice/`
-- Practice notebook for NumPy concepts
+- Dedicated notebooks for reinforcing core NumPy concepts.
 
 ### `NumPy Advance/`
-Advanced NumPy topics:
-- Advanced indexing
-- Broadcasting
-- Missing values
-- Plotting and extra methods
+In-depth exploration of advanced array operations and mathematical computing:
+- **Advanced Indexing:** Techniques for complex array selection and multi-dimensional slicing.
+- **Array Broadcasting:** Operational rules, implementation examples, and computational error resolution.
+- **Handling Missing Values:** Identification, filtering, and management of NaN/null data points within numerical arrays.
+- **Plotting Graphs:** Integrating array data with visualization operations.
+- **Set Functions:** Advanced operations including union, intersection, and unique value extraction on arrays.
+- **Extra Methods (Part 1 & 2):** Comprehensive coverage of specialized NumPy utility functions for extended statistical and mathematical operations.
 
 ### `Pandas in Python/`
-- DataFrame basics in Pandas
+- Introduction to DataFrames and series operations.
 
-## Tech stack
+## Tech Stack
 - Python 3
 - Jupyter Notebook
 - Git & GitHub
 
 ## Goal
-Build a strong Python base for Data Science and Machine Learning and move toward real-world ML projects.
+To establish a robust foundation in Python programming tailored for Data Science and Machine Learning, bridging the gap between theoretical syntax and real-world analytical projects.
 
 ---
-*Maintained by Ayush*
+*Maintained by Ayush Suthar*
