@@ -8,10 +8,12 @@ This repository documents my hands-on journey from fundamental Python programmin
 
 ### `Fundamentals of Python/`
 Core Python programming concepts:
-- Control flow (if-else statements, loops, loop control mechanisms)
+- Control flow (if-else statements, for loops, while loops, nested loops, loop control mechanisms)
 - Data structures (lists, tuples, sets, frozensets, dictionaries, strings)
+- String operations and practice exercises
 - Functions and arguments
-- Lambda functions and comprehensions
+- Lambda functions, list comprehensions, and dictionary comprehensions
+- Sequence sum patterns
 - Modules and operators
 
 ### `Advance Python/`
@@ -24,24 +26,29 @@ Core Python programming concepts:
 - Creating and handling custom exceptions
 
 ### `File Handling in Python/`
-- Text and binary file operations
-- Context management using the 'with' statement
-- Serialization and deserialization (Pickling)
+- Text file operations (read, write, append) and context management using the `with` statement
+- Binary file operations
+- Serialization and deserialization
+- Pickling and unpickling Python objects
 
 ### `OOPS in Python/`
 Object-Oriented Programming principles:
-- Classes and objects
+- Classes and objects (Part 1 & 2)
+- Reference variables and user-defined data types
 - Inheritance hierarchies
 - Encapsulation and data hiding
 - Abstraction
 - Polymorphism
-- Object aggregation and the super() function
+- Object aggregation and the `super()` function
 
 ### `Python fundamental Questions/`
 Practice notebooks dedicated to:
-- Revision of fundamental logic
-- Data structure manipulation exercises
-- Decorator, OOP, and exception handling practicals
+- Fundamental logic and level-1 problem solving
+- List and dictionary manipulation exercises
+- List comprehension practice
+- Decorator practicals
+- OOP practice
+- Exception handling practicals
 
 ### `My projects/`
 Functional mini-projects developed during the learning phase:
@@ -71,7 +78,13 @@ In-depth exploration of advanced array operations and mathematical computing:
 - **Extra Methods (Part 1 & 2):** Comprehensive coverage of specialized NumPy utility functions for extended statistical and mathematical operations.
 
 ### `Pandas in Python/`
-- Introduction to DataFrames and series operations.
+Comprehensive coverage of the Pandas library for data manipulation and analysis:
+- **Series:** Creation, indexing, slicing, math methods, and extended series operations (Part 1 & 2)
+- **DataFrames:** Introduction, creation, and structural understanding
+- **Indexing & Selection:** Editing the index, selecting columns, rows, and combined selections
+- **Math Methods:** Statistical and mathematical operations on DataFrames
+- **Plotting:** Visualizing Series data with built-in plot methods
+- **Python Integration:** Using Python functionality within Pandas workflows
 
 ## Tech Stack
 - Python 3
